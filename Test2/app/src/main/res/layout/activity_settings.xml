@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SettingsActivity">
+
+    <ScrollView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:ignore="SpeakableTextPresentCheck,UselessLeaf,UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- App Preferences Section -->
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="App Preferences"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                tools:ignore="HardcodedText" />
+
+            <!-- Theme Selection -->
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Theme Selection"
+                android:paddingLeft="16dp"
+                tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+            <!-- Replace with an actual Spinner or Switch -->
+            <!-- Placeholder for Theme Selection -->
+            <Spinner
+                android:layout_margin="10dp"
+                android:id="@+id/theme_selection"
+                android:layout_width="280dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/edited_edittext"
+                android:gravity="center"
+                android:textAlignment="center" />
+
+            <!-- Connectivity Section -->
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Connectivity"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                tools:ignore="HardcodedText" />
+
+            <!-- Offline Mode Toggle -->
+            <Switch
+                android:id="@+id/offline_mode_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:paddingLeft="16dp"
+                android:text="Offline Mode"
+                tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry,UseSwitchCompatOrMaterialXml,VisualLintButtonSize" />
+
+            <!-- Additional Features Section -->
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Additional Features"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                tools:ignore="HardcodedText" />
+
+            <!-- Customization Options -->
+            <Button
+                android:id="@+id/customize_layout_button"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edited_background"
+                android:padding="8dp"
+                android:text="Customize App Layout"
+                tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
+
+            <!-- Account Management Section -->
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account Management"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                tools:ignore="HardcodedText" />
+
+            <!-- Logout Button -->
+            <Button
+                android:id="@+id/logout_button"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:background="@drawable/edited_background"
+                android:padding="8dp"
+                android:text="Logout"
+                tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
+
+            <!-- Deactivate/Delete Account -->
+            <Button
+                android:id="@+id/delete_account_button"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/edited_background"
+                android:padding="8dp"
+                android:text="Delete Account"
+                tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "48462485861",
+    "project_id": "test2-908f3",
+    "storage_bucket": "test2-908f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:48462485861:android:5ac312f749fd5b4929298c",
+        "android_client_info": {
+          "package_name": "com.jamesaldteves.test2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyklLYS5nLFlEdP4YM1BpKGAb7BQ_BgSQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

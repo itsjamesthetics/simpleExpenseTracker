@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SET</string>
+    <string name="title_activity_view_budget">ViewBudgetActivity</string>
+    <string-array name="theme_options">
+        <item>Dark Theme Mode</item>
+        <item>Light Theme Mode</item>
+    </string-array>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"></style>
+
+    <style name="AppTheme.Dark" parent="Theme.AppCompat.NoActionBar"></style>
+
+</resources>

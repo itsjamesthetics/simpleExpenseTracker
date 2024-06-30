@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UpdateTransactionActivity">
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_view" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Transaction \n - Add -"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_below="@+id/top_view"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="-80dp"
+        android:layout_marginRight="25dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/transaction"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Amount:  "
+                        android:textColor="@color/teal_700"
+                        tools:ignore="HardcodedText,TextContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/update_transaction_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edited_edittext"
+                        android:hint="  ₱ 0.00"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text=""
+                        android:textColorHint="@color/black"
+                        tools:ignore="Autofill,HardcodedText,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck,VisualLintTextFieldSize,VisualLintBounds,TextContrastCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="UselessLeaf,UselessParent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Category: "
+                        android:textColor="@color/teal_700"
+                        tools:ignore="HardcodedText,TextContrastCheck"
+                        android:layout_gravity="center_vertical"/>
+
+                    <Spinner
+                        android:id="@+id/update_transaction_category_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/edited_edittext"
+                        android:gravity="center"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date:        "
+                        android:textColor="@color/teal_700"
+                        tools:ignore="HardcodedText,TextContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/update_transaction_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:inputType="none"
+                        android:background="@drawable/edited_edittext"
+                        android:hint="Date (YYYYMMDD)"
+                        android:focusable="true"
+                        android:cursorVisible="false"
+                        android:clickable="true"
+                        android:textAlignment="center"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        tools:ignore="Autofill,HardcodedText,LabelFor,SpeakableTextPresentCheck,TextContrastCheck,TextFields,TouchTargetSizeCheck,VisualLintBounds,VisualLintTextFieldSize" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Note:         "
+                        android:textColor="@color/teal_700"
+                        tools:ignore="HardcodedText,TextContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/update_trans_note"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edited_edittext"
+                        android:inputType="text"
+                        android:imeOptions="actionNext"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck,VisualLintTextFieldSize,VisualLintBounds" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp">
+
+                    <Button
+                        android:id="@+id/btn_transactioncancelupdate"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="35dp"
+                        android:background="@drawable/edited_background"
+                        android:text="Cancel"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textSize="15sp"
+                        tools:ignore="ButtonStyle,HardcodedText,TextContrastCheck,TouchTargetSizeCheck,VisualLintButtonSize" />
+
+                    <Button
+                        android:id="@+id/btn_transactionupdate"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end|right"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="35dp"
+                        android:background="@drawable/edited_background"
+                        android:text="Update"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textSize="15sp"
+                        tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded,TextContrastCheck,TouchTargetSizeCheck,VisualLintButtonSize,VisualLintBounds" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+</RelativeLayout>
